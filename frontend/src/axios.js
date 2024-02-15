@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const $host = axios.create({
-	baseUrl: 'http://localhost:4444'
+	baseUrl: 'REACT_APP_API_URL'
 })
 
 $host.interceptors.request.use(config => {
